@@ -1,0 +1,91 @@
+/* * {
+  margin: 0;
+  padding : 0;
+} */
+
+body {
+
+    font-family: 'Play', sans-serif;
+    background-image: url("./background/background.jpg");
+    background-size: cover;
+    /* border: 2px solid;
+    color: pink; */
+    /* resize: both;
+    overflow: scroll; */
+}
+
+td {
+    height: 130px;
+    width : 130px;
+    border: 3px #00FFFF solid;
+    text-align: center;
+    font-size: 60px;
+}
+
+#winner {
+    /* text-align: center; */
+}
+
+#tic-tac-toe {
+    text-align: center;
+}
+
+#startOver {
+    /* text-align: center; */
+    color: white;
+}
+
+#tables {
+}
+
+
+td.score {
+    font-size : 20px;
+    font-weight: bold;
+    color:#FF0099;
+    background-color: #480c85;
+    height: 1px;
+    width: 150px;
+}
+
+#scoreboard {
+    width: 600px;
+    margin-left: 50%;
+}
+td.nums  {
+    font-size : 20px;
+    height: 50px;
+    width: 150px;
+}
+
+
+h1 {
+    color: white;
+}
+
+#start {
+    /* text-align:center;  */
+    width:150px;
+    /* margin-left: 29%; */
+    margin-top: 1.3%;
+}
+
+.main {
+}
+
+#start {
+    background-color: #FF0099;
+}
+
+input {
+    width: 150px;;
+}
+
+.nums {
+    color: white;
+}
+
+#clearScore {
+    width:150px;
+    background-color: #00FFFF;
+}

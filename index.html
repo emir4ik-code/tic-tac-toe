@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class = "main">
+                <h1>TIC TAC TOE</h1>
+                <button id ='start'>PLAY</button>
+                <button id = 'clearScore'>CLEAR SCORE</button>
+                <br>
+                <input class = "input"id = "plr1input" placeholder="player1"></input> 
+                <br>
+                <input class = "input" id = "plr2input" placeholder="player2"></input> 
+                <table id='scoreboard'>
+                    <tr>
+                        <td class= 'score'>Player</td>
+                        <td class= 'score'>Wins</td>
+                        <td class= 'score'>Loss</td>
+                        <td class= 'score'>Draw</td>
+                        <td class= 'score'>Win rating</td>
+                        <!-- <td class= 'score'>Score</td> -->
+                    </tr>    
+                    <tr>
+                        <td class= 'score' id='plr1name'></td>
+                        <td class= 'nums' id='plr1wins'>0</td>
+                        <td class= 'nums' id='plr1los'>0</td>
+                        <td class= 'nums' id='plr1draw'>0</td>
+                        <td class= 'nums' id='plr1rate'>0</td>
+                        <!-- <td class= 'nums' id='plr1score'>0</td> -->
+                    </tr>    
+                
+                    <tr>
+                        <td class= 'score' id='plr2name'></td>
+                        <td class= 'nums' id='plr2wins'>0</td>
+                        <td class= 'nums' id='plr2los'>0</td>
+                        <td class= 'nums' id='plr2draw'>0</td>
+                        <td class= 'nums' id='plr2rate'>0</td>
+                        <!-- <td class= 'nums' id='plr2score'>0</td> -->
+                    </tr>    
+                </table>
+    </div>
+<div>
+    <h1 id ='startOver'></h1>
+    <h2 id ="winner"></h2>
+    <div id ='tables'>
+        
+        <table>
+            <tr>
+                <td class ='table-element' id="topLeft"></td>
+                <td class ='table-element' id= 'topMid'></td>
+                <td  class ='table-element'id='topRight'></td>
+            </tr>
+            <tr>
+                <td class ='table-element'id="midLeft"></td>
+                <td class ='table-element' id= 'midMid'></td>
+                <td class ='table-element'id='midRight'></td>
+            </tr>
+            <tr>
+                <td class ='table-element' id="botLeft"></td>
+                <td class ='table-element' id='botMid'></td>
+                <td class ='table-element' id='botRight'></td>
+            </tr>
+        </table>
+       
+</div> 
+
+
+   
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type='module' src ="script.js"></script>
+    <script type = 'module'src='engine.js'></script>
+    <script type = 'module' src ='table-data.js'></script>
+</body>
+</html>
